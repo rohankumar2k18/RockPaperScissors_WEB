@@ -1,0 +1,88 @@
+/* Common styles for all screen sizes */
+#heading, #parentDiv, #mainContainer {
+  text-align: center; /* Center text */
+}
+
+#heading {
+  font-family: consolas, monospace;
+  padding: 20px;
+}
+
+/* Styles for screens up to 768px wide (e.g., smartphones) */
+@media screen and (max-width: 768px) {
+  #mainContainer {
+    width: 90vw; /* Adjust width for smaller screens */
+    height: auto; /* Allow content to expand vertically */
+    padding: 10px; /* Add padding for better readability */
+  }
+
+  .playButton {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Styles for screens between 769px and 1024px wide (e.g., tablets) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #mainContainer {
+    width: 60vw; /* Adjust width for medium-sized screens */
+  }
+}
+
+/* Styles for screens larger than 1024px wide (e.g., desktops) */
+@media screen and (min-width: 1025px) {
+  #mainContainer {
+    width: 35vw; /* Adjust width for larger screens */
+  }
+}
+
+/* Common styles for all screen sizes */
+#mainContainer {
+  border: 3px solid black;
+  border-radius: 50px;
+  background-color: rgb(119, 214, 214);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameText {
+  font-family: consolas, monospace;
+}
+
+.playButton {
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 5px 25px; /* Equal padding on left and right */
+  transition: color 0.3s ease;
+}
+
+.playButton:hover {
+  background-color: rgb(188, 182, 178);
+  color: red;
+  cursor: pointer;
+}
+#buttonContainer{
+  margin-bottom: 20px;
+}
+#parentDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#playerText {
+  color: blue;
+}
+
+#computerText {
+  color: green;
+}
+
+#resultText {
+  color: red;
+}
